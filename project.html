@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Orbit's Virtual Stump</title>
+  <title>Orbit's Projects</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      padding: 20px;
       font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       background: linear-gradient(270deg, #000000, #4B0082, #000000);
       background-size: 600% 600%;
       animation: gradient 15s ease infinite;
       color: white;
-      flex-direction: column;
     }
 
     @keyframes gradient {
@@ -26,12 +22,36 @@
     }
 
     h1 {
-      font-size: 2.5rem;
       text-align: center;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
     }
 
-    button {
+    .project {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .project h2 {
+      margin-top: 0;
+      color: #dda0dd;
+    }
+
+    .project p {
+      margin: 0;
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button button {
       background-color: #8a2be2;
       color: white;
       border: none;
@@ -40,17 +60,124 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      margin: 10px;
     }
 
-    button:hover {
+    .back-button button:hover {
       background-color: #a55eea;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome To Orbit's Virtual Stump</h1>
-  <button onclick="window.open('https://discord.gg/JaGuVJB5Z7', '_blank')">Add Orbit</button>
-  <button onclick="window.location.href='projects.html'">View Projects</button>
+  <h1>Orbit's Projects</h1>
+
+  <div class="project">
+    <h2>Project Alpha</h2>
+    <p>A powerful moderation bot for Discord servers.</p>
+  </div>
+
+  <div class="project">
+    <h2>Project Beta</h2>
+    <p>A music bot with crystal-clear audio and playlist support.</p>
+  </div>
+
+  <div class="project">
+    <h2>Project Gamma</h2>
+    <p>An AI assistant bot that answers questions and automates tasks.</p>
+  </div>
+
+  <div class="back-button">
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orbit's Projects</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #000000, #4B0082, #000000);
+      background-size: 600% 600%;
+      animation: gradient 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .project {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .project h2 {
+      margin-top: 0;
+      color: #dda0dd;
+    }
+
+    .project p {
+      margin: 0;
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .back-button button {
+      background-color: #8a2be2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button button:hover {
+      background-color: #a55eea;
+    }
+  </style>
+</head>
+<body>
+  <h1>Orbit's Projects</h1>
+
+  <div class="project">
+    <h2>Project Alpha</h2>
+    <p>A powerful moderation bot for Discord servers.</p>
+  </div>
+
+  <div class="project">
+    <h2>Project Beta</h2>
+    <p>A music bot with crystal-clear audio and playlist support.</p>
+  </div>
+
+  <div class="project">
+    <h2>Project Gamma</h2>
+    <p>An AI assistant bot that answers questions and automates tasks.</p>
+  </div>
+
+  <div class="back-button">
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+  </div>
 </body>
 </html>
